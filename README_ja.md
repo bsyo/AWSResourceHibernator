@@ -184,9 +184,9 @@ aws lambda update-function-configuration \
     --function-name aws-resource-hibernator \
     --environment Variables='{
         "AWS_REGION":"us-east-1",
-        "EC2_INSTANCE_ARNS":"arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0",
-        "ECS_SERVICE_ARNS":"arn:aws:ecs:us-east-1:123456789012:service/my-cluster/my-service",
-        "RDS_INSTANCE_ARNS":"arn:aws:rds:us-east-1:123456789012:db:my-database",
+        "EC2_INSTANCE_ARNS":"arn:aws:ec2:us-east-1:123456789012:instance/i-123,arn:aws:ec2:us-east-1:123456789012:instance/i-456",
+        "ECS_SERVICE_ARNS":"arn:aws:ecs:us-east-1:123456789012:service/my-cluster/service1,arn:aws:ecs:us-east-1:123456789012:service/my-cluster/service2",
+        "RDS_INSTANCE_ARNS":"arn:aws:rds:us-east-1:123456789012:db:db1,arn:aws:rds:us-east-1:123456789012:db:db2",
         "LOG_LEVEL":"INFO"
     }'
 ```
